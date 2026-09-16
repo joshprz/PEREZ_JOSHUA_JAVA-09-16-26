@@ -1,1 +1,122 @@
+//JAVA PROGRAMMING LANGUAGE
 
+public class Main {
+    public static void main(String[] args) {
+      System.out.println("Hello, World!");
+    }
+}
+//--Declaring variables of diff data types--
+int-whole Number
+double- double precision of decimal Number
+float-single precision of decimal Number using 'f'
+char-single character (single quotes)
+boolean-true or false
+String- text
+
+//
+int      age        =    20;
+^         ^         ^     ^
+types    variable   CharSequence
+double price = 40.55; // double precisions
+float weight = 85.9f; // single precisions
+char grade= 'A';// single character
+boolean isStudent =true; // True or False
+String name ="Tobias"; // Text // not primitive
+
+//---Output using System.out.println---
+System.out.println("Name:" +name);
+System.out.println("Age:" +age);
+System.out.println("Price:" +price);
+System.out.println("Weight:" +weight);
+System.out.println("Grade:" +grade);
+System.out.println("Is Student? " +isStudent);
+
+//--Getting input using Scanner---
+System.out.println("\nEnter your city: ");
+String userCity = scanner.next();// raeds one word(stops at whitespace)
+System.out.println("You live in:" +userCity);
+
+//--Reading a full line(including spaces)---
+scanner.nextline(); // clear leftover newline form previous next()
+System.out.print("Enter a sentence about yourself ");
+String fullSentence=scanner.nextline(); // read the entire line
+System.out.println("You said: "+fullSentence);
+
+scanner.close()
+
+//Operators & Expressions
+public class Main{
+        public static void main(String[] args){
+                //+,-.*,/,%
+        int a =10, b = 3;
+
+        System.out.println("a + b = " + (a + b)); // output: a + b = 13
+        System.out.println("a - b = " + (a - b)); // output: a - b = 7
+        System.out.println("a * b = " + (a * b)); // output: a * b = 30
+        System.out.println("a / b = " + (a / b)); // output: a / b = 3
+        System.out.println("a % b = " + (a % b)); // output: a % b = 1
+
+double x = 10, y =3;
+System.out.println("x / y = "+ (x / y)); // output x / y =3.3333333335
+
+System.out.println("\na == b: " + (a == b)); // output a == b: false
+System.out.println("a != b: " + (a != b)); // output a != b: true
+System.out.println("a > b: " + (a > b)); // output a > b: true
+System.out.println("a < b: " + (a < b)); // output a < b: false
+
+boolean p = true, q = false;0
+System.out.println("\np && q: " + (p && q)); // output:false
+System.out.println("p || q: " + (p || q)); // output:true
+System.out.println("\!p: " + (!p)); // output:false
+
+int score = 50;
+score += 10;
+System.out.println("\nscore after +=10: " + score); // output: score after +=10: 60
+score *= 2;
+System.out.println("score after *= 2: " + score); // output: score after *=2: 120
+
+int counter =5;
+System.out.println("\ncounter++ (post): counter++"); //output: 5
+System.out.println("\counter now: " + counter); //output now: 6
+System.out.println("++counter (pre): " + ++counter); //output ++counter (pre): 15
+        }
+}
+
+// Control Flow(if/else if/ else, switch, loops)
+
+// if / else if /if
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.print("Enter your exam score: ");
+    int score = scanner.nextInt();
+
+    if (score >= 90) {
+        System.out.println("Grade: A");
+    } else if (score >= 80) {
+        System.out.println("Grade: B");
+    } else if (score >= 70) {
+        System.out.println("Grade: C");
+    } else {
+        System.out.println("Grade: F");
+    }  
+
+// Switch case
+System.out.print("\nEnter a day number (1-7): ");
+int day = scanner.nextInt();
+
+switch (day) {
+      case 1: System.out.println("Monday"); break;
+            case 2: System.out.println("Tuesday"); break;
+            case 3: System.out.println("Wednesday"); break;
+            case 4: System.out.println("Thursday"); break;
+            case 5: System.out.println("Friday"); break;
+            case 6: System.out.println("Saturday"); break;
+            case 7: System.out.println("Sunday"); break;
+            default: System.out.println("Invalid Day"); break;
+  }
+
+}
